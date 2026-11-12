@@ -1,2 +1,5 @@
-import time
-print("Render test running"); time.sleep(60)
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def home():
+  return "Trading dashboard starting up"
